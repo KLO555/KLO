@@ -42,4 +42,7 @@ function showLastScore() {
   }
 }
 
+
+
+
 window.onload = showLastScore;
