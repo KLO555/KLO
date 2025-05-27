@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เรียนรู้การหาร</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="header">
+    🧮 เรียนรู้การหาร
+  </div>
+
+  <section class="hero">
+    <h1>เริ่มต้นเรียนรู้การหาร</h1>
+    <p>เข้าใจแนวคิดของการหาร พร้อมตัวอย่างและแบบทดสอบฝึกฝน</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/201/201612.png" width="100" alt="calculator" class="center-icon">
+  </section>
+
+  <main>
+    <section>
+      <h2>🔢 การหารคืออะไร?</h2>
+      <p>การหาร คือกระบวนการแบ่งจำนวนหนึ่งออกเป็นส่วนเท่า ๆ กัน เช่น 12 ÷ 3 = 4 หมายความว่า 12 ถูกแบ่งออกเป็น 3 กลุ่ม กลุ่มละ 4</p>
+    </section>
+
+    <section>
+      <h2>🧮 ตัวอย่างการหาร</h2>
+      <ul>
+        <li>10 ÷ 2 = 5</li>
+        <li>20 ÷ 4 = 5</li>
+        <li>15 ÷ 3 = 5</li>
+      </ul>
+    </section>
+
+    <section id="quiz">
+      <h2>📝 แบบทดสอบเรื่องการหาร</h2>
+
+      <div class="question">
+        <p><strong>1. 12 ÷ 4 = ?</strong></p>
+        <label><input type="radio" name="q1" value="3"> 3</label>
+        <label><input type="radio" name="q1" value="4"> 4</label>
+      </div>
+
+      <div class="question">
+        <p><strong>2. 18 ÷ 6 = ?</strong></p>
+        <label><input type="radio" name="q2" value="3"> 3</label>
+        <label><input type="radio" name="q2" value="6"> 6</label>
+      </div>
+
+      <div class="question">
+        <p><strong>3. 9 ÷ 3 = ?</strong></p>
+        <label><input type="radio" name="q3" value="3"> 3</label>
+        <label><input type="radio" name="q3" value="6"> 6</label>
+      </div>
+
+      <br>
+      <div class="quiz-buttons">
+        <button onclick="checkQuiz()">✅ ตรวจคำตอบ</button>
+        <button onclick="resetQuiz()">🔄 เริ่มใหม่</button>
+      </div>
+
+      <p id="quizResult"></p>
+      <p id="lastScore"></p>
+    </section>
+
+    <section id="contact">
+      <h2>📞 ติดต่อเรา</h2>
+      <p>Facebook: <a href="https://www.facebook.com/12TNTy" target="_blank">เรียนคณิตกับครู</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 เรียนรู้การหาร | สร้างเพื่อการศึกษา
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
